@@ -1,1 +1,100 @@
 // Custom styles.
+
+// 主页文章添加阴影效果
+.post {
+   margin-top: 0px;
+   margin-bottom: 60px;
+   padding: 25px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+}
+
+// 文章内链接文本样式
+.post-body p a{
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+  &:hover {
+    color: #fc6423;
+    border-bottom: none;
+    border-bottom: 1px solid #fc6423;
+  }
+}
+
+#instantclick {
+  display: none;
+}
+
+.site-title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.site-meta {
+    padding: 20px 0;
+    color: #fff;
+    background: #333333;
+}
+
+.headband {
+    height: 3px;
+    background: #333333;
+}
+
+i.fa.fa-heart {
+    color: #f55e5e;
+}
+
+a.post-tag {
+    background: #ececec;
+    border-radius: 3px 0 0 3px;
+    color: #52768e;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 .5rem .6rem 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    border-bottom: 0px solid #999;
+}
+
+.post-tag::before {
+    background: #fff;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+}
+
+.post-tag::after {
+    background: #fff;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #ececec;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.post-tag:hover,
+.post-tag.active {
+  background-color: #c76c0c;
+  color: white;
+}
+
+.post-tag:hover::after,
+.post-tag.active::after {
+  border-left-color: #c76c0c;
+}
