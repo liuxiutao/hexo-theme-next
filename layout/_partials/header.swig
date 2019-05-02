@@ -42,9 +42,13 @@
         <li class="menu-item menu-item-{{ itemName }}">
           <a href="{{ url_for(path) }}" rel="section">
             {% if theme.menu_icons.enable %}
-              <i class="menu-item-icon fa fa-fw fa-{{theme.menu_icons[itemName] | default('question-circle') | lower }}"></i> <br />
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-fw fa-{{theme.menu_icons[itemName] | default('question-circle') | lower }}"></i> 
+              </div> 
             {% endif %}
-            {{ __('menu.' + name) }}
+            <div class="menu-item-name">
+              {{ __('menu.' + name) }}
+            <div>
           </a>
         </li>
       {% endfor %}
@@ -57,9 +61,14 @@
             <a href="javascript:;" class="popup-trigger">
           {% endif %}
             {% if theme.menu_icons.enable %}
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+              <div class="menu-item-ico">
+                <i class="menu-item-icon fa fa-search fa-fw"></i>
+              </div> 
+              
             {% endif %}
-            {{ __('menu.search') }}
+            <div class="menu-item-name">
+              {{ __('menu.search') }}
+            </div>
           </a>
         </li>
       {% endif %}

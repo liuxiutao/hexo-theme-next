@@ -1,5 +1,230 @@
 // Custom styles.
 
+// 背景图片
+body{   
+  background:url(/images/bg1.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  line-height: 1.7;
+}
+
+// 主页下边距
+.main {
+    padding-bottom: 110px;
+    word-wrap: break-word;
+}
+
+#instantclick {
+  display: none;
+}
+
+
+
+
+
+// 导航栏设置-------------------------------------------------------
+.header {
+  width: 100%;
+  //max-width: 960px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+// 顶上横线样式设置
+.headband {
+  //display: none;
+  height: 2px;
+  background: #001a63;
+}
+
+.container .header-inner {
+  width: 100%;
+  position: relative;
+  //height: 76px;
+  max-width: 1000px;
+  background: rgba(255,255,255,0)
+  //background-color: rgba(255,255,255,0.9)
+}
+
+@media (min-width: 801px){
+  .header-margin {
+    margin: 0 20px;
+  }
+}
+
+.site-brand-wrapper {
+  background-color:rgba(255,255,255,1);
+}
+
+@media (min-width: 801px) {
+  .site-brand-wrapper {
+    width: 240px;
+    float: left;
+  }
+}
+
+// 博客标题颜色
+.site-meta {
+    padding: 10px 0;
+    background: rgba(255,255,255,0);
+}
+
+// 博客名称字体设置
+.site-title {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #101a50;
+    font-family: 'Kunstler Script',
+     'Harlow Solid', 'Edwardian Script ITC', 
+     'Lato', "PingFang SC", "Microsoft YaHei", 
+     sans-serif;
+}
+
+.site-subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #101a50
+}
+
+
+
+
+
+// 菜单栏设置----------------------------------------------------------
+@media (min-width: 801px) {
+  .site-nav {
+    margin-left: 260px;
+    margin-top: -9px;
+  }
+}
+
+@media (min-width: 801px) {
+  .menu {
+    margin-top: -13px;  
+  }
+  .menu .menu-item{
+    width: 16.6%;
+    float: left;
+  }
+  .menu .menu-item a {
+    font-size: 16px
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .menu .menu-item .fa {
+    margin-right: 0px;
+    font-size: 24px;
+  }
+
+  .menu-item-active a:after {
+    display: none;
+  }
+}
+
+.menu .menu-item a:hover {
+  background: #f9f9f9;
+  border-bottom-color: #fff;
+}
+
+.menu-item-active a {
+  background: unset;
+  color: #E7500E;
+}
+
+@media (max-width:800px) {
+  .menu-item-ico {
+    float: left;
+  } 
+
+  .nemu-item-name {
+    float: right;
+  } 
+  
+  .site-meta {
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
+  }
+}
+
+.btn-bar {
+    background-color: #333;
+}
+
+
+
+
+
+// 侧边栏设置------------------------------------------------------------
+.sidebar {
+  //position: absolute;
+  //margin-top: 96px;  
+}
+
+// 友情链接边距设置
+.links-of-blogroll-item {
+  padding: 4px 20px;
+}
+
+// 社交链接设置
+.links-of-author-item {
+    margin: 5px 0 0;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+// 主体设置-------------------------------------------------------------
+.container .main-inner {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+@media (min-width: 801px){
+  .main-margin {
+    margin: 0 20px;
+  }
+}
+
+// 半透明样式
+.content-wrap {
+  background-color:rgba(255,255,255,0);
+  padding: 20px 0px 0px 0px;
+  min-height: 600px;
+}
+
+@media (min-width: 801px) {
+  .content-wrap {
+    margin-right: -260px;
+    width: 100%;
+    //max-width: 700px;
+  }
+  div#content {
+    margin-right: 260px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-wrap {
+    padding: 10px 0 0 0;
+  }  
+}
+
+// 单页面设置
+.page {
+  background-color:rgba(255,255,255,0.9);
+  min-height: 600px;
+  padding: 40px 25px 25px 25px;
+}
+
+
+
+//主页设置-------------------------------------------------------------
 // 主页文章添加阴影效果
 .post {
    margin-top: 0px;
@@ -9,6 +234,79 @@
    -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
 }
 
+/*
+.btn:hover, .post-button .btn:hover {
+    border-color: #E7500E;
+    color: #fff;
+    background: #E7500E;
+}
+*/
+
+.post {
+  background-color: rgba(255,255,255,0.9);
+}
+
+@media (min-width: 801px) {
+  .post {
+    margin-bottom: 20px;
+    padding-top: 45px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }  
+}
+
+
+@media (max-width: 800px) {
+  .post {
+    margin-bottom: 10px;
+    padding-top: 35px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }  
+}
+
+// 主页最后一篇文章下边距设置
+.post:last-child {
+  margin-bottom: 0px;
+}
+
+
+.pagination {
+    background-color: rgba(255, 255, 255, 0.8)
+    border-bottom: 1px solid #eee;
+}
+@media (min-width: 801px) {
+  .pagination {
+    margin: 40px 0 30px;
+  }
+}
+@media (max-width: 800px) {
+  .pagination {
+    margin: 15px 0 0px;
+  }
+}
+
+.pagination .prev, .pagination .next, .pagination .page-number {
+    border-bottom: 0;
+    border-top: 0;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+
+.pagination .prev:hover,
+.pagination .next:hover,
+.pagination .page-number:hover {
+  background: #fff;
+}
+.pagination .page-number.current {
+    color: #fc6423;
+    background: none;
+}
+
+// 文章设置-----------------------------------------------------------
 // 文章内链接文本样式
 .post-body p a{
   color: #0593d3;
@@ -21,80 +319,208 @@
   }
 }
 
-#instantclick {
-  display: none;
-}
-
-.site-title {
-    display: inline-block;
-    vertical-align: top;
-    line-height: 36px;
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Kunstler Script', 'Harlow Solid', 'Edwardian Script ITC', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-}
-
-.site-meta {
-    padding: 20px 0;
-    color: #fff;
-    background: #333333;
-}
-
-.headband {
-    height: 3px;
-    background: #333333;
-}
-
-i.fa.fa-heart {
-    color: #f55e5e;
-}
 
 a.post-tag {
-    background: #ececec;
-    border-radius: 3px 0 0 3px;
-    color: #52768e;
-    display: inline-block;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 20px 0 23px;
-    position: relative;
-    margin: 0 .5rem .6rem 0;
-    text-decoration: none;
-    -webkit-transition: color 0.2s;
     border-bottom: 0px solid #999;
 }
 
-.post-tag::before {
-    background: #fff;
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-            box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-    content: '';
-    height: 6px;
-    left: 10px;
-    position: absolute;
-    width: 6px;
-    top: 10px;
+.post-tag-name::before {
+  display: block;
+  height: 6px;
+  width: 6px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  position: relative;
+  left: -20px;
+  top: 12px;
 }
 
-.post-tag::after {
-    background: #fff;
-    border-bottom: 13px solid transparent;
-    border-left: 10px solid #ececec;
-    border-top: 13px solid transparent;
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
+.post-tag-name {
+    color: white;
+    background-color: #E7500E;
+    //width:40px;
+    height:30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    float:left;
+    line-height: 19px;
+    border-radius: 3px 0 0 3px;
+}
+
+.triangle{
+    width:0;
+    height:0;
+    border-width:15px 0 15px 15px;
+    border-style:solid;
+    border-color:transparent transparent transparent #E7500E;/*透明 透明 透明 灰*/
+    position:relative; 
+    float: left;
 }
 
 .post-tag:hover,
 .post-tag.active {
-  background-color: #c76c0c;
-  color: white;
+  .post-tag-name {
+      background-color: #f99d68;
+  }
+  .triangle{
+    border-color:transparent transparent transparent #f99d68;
+  }
 }
 
-.post-tag:hover::after,
-.post-tag.active::after {
-  border-left-color: #c76c0c;
+// 文章底部边距设置
+.posts-expand {
+  .post-eof {
+    display: block;
+    margin: 20px auto 10px;
+    width: 8%;
+    height: 0px;
+    background: $grey-light;
+    text-align: center;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.highlight {
+  margin: 10px 0;  
+}
+
+
+
+
+
+// 分类页设置--------------------------------------------------------
+// 分类页-分类计数颜色设置
+.category-all-page .category-list-count {
+    color: #E7500E;
+}
+
+// 分类页- 分类条目设置
+.category-all-page .category-list-item {
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .posts-expand {
+    margin: 0 10px;
+  }
+
+  .category-all-page .category-list {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 801px) {
+  .category-all-page .category-list {
+      margin-left: 30px;
+  }
+}
+
+
+
+
+
+
+// 归档页设置------------------------------------------------------------
+.posts-collapse .collection-title {
+  position: relative;
+  margin: 30px 0 20px 0;
+  color:white;
+  small{
+    color: #fff;
+  }
+}
+
+
+
+.posts-collapse::after { 
+  background: rgba(255,255,255, 0.9);
+}
+
+// 归档页
+.page-archive .posts-collapse .archive-move-on {
+  background: #fff;
+  border: 1px solid #fff;
+  opacity: 1;
+}
+
+.page-archive .archive-page-counter {
+  color: white;
+  font-size: 16px;
+}
+
+.posts-collapse .collection-title::before {
+  background-color: #fff;
+}
+
+.archive-year {
+  color: #fff;  
+}
+
+// 文章标题设置
+.posts-collapse .post-title {
+    margin-left: 60px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: inherit;
+}
+
+.posts-collapse {
+  margin-top: 20px;  
+}
+
+@media (min-width: 801px) {
+  .posts-collapse {
+    margin-left: 40px; 
+    margin-right: 40px;  
+  }
+}
+
+@media (max-width: 800px) {
+  .posts-collapse {
+    margin-left: 20px;  
+    margin-right: 20px; 
+  }
+}
+
+// 文章边距设置
+.posts-collapse .post {
+  padding: 20px 20px 20px 30px;
+  margin: 10px 0;
+}
+
+.comments {
+  margin: 0 0 0 0;  
+}
+
+
+// 底栏设置------------------------------------------------------------
+.footer {
+  background-color: rgba(256,256,256,0.85);
+  line-height: 1.5;
+  min-height: 90px;
+  .footer-inner {
+    margin: 13px auto; 
+    width: 100%;
+    max-width: 1000px; 
+  }
+  color: #555;
+}
+
+@media (min-width: 801px){
+  .header-margin {
+    footer: 0 20px;
+  }
+}
+// 底部❤颜色
+i.fa.fa-heart {
+    color: #f55e5e;
 }

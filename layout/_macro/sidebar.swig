@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar" style="margin-top: 0px">
     {% if theme.sidebar.onmobile %}
       <div id="sidebar-dimmer"></div>
     {% endif %}

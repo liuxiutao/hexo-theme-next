@@ -343,7 +343,8 @@
         <div class="post-tags">
           {% for tag in post.tags %}
             <a class="post-tag" href="{{ url_for(tag.path) }}" rel="tag">
-              {{ tag.name }}
+              <div class="post-tag-name">{{ tag.name }}</div>
+              <div class="triangle"></div>
             </a>
           {% endfor %}
         </div>
